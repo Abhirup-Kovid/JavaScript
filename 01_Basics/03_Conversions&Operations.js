@@ -1,3 +1,5 @@
+// **************************----CONVERSIONS----*************************************
+
 let score = "33abc"
 
 console.log(typeof score);
@@ -66,5 +68,43 @@ console.log(someNumber);
 let someNumber1=undefined
 let stringNumber1=String(someNumber1)
 console.log(someNumber1);
+
+
+
+// **************************----OPERATIONS----*************************************
+// let value = 3
+// let negval = -value
+// console.log(negval)//gives the ngative value
+
+// console.log(2+2)
+// console.log(2*2);
+// console.log(2**2);// 2 raised to power 2
+
+let str1= "hello"
+let str2= "Abhi"
+let str3= str1+str2
+console.log(str3);
+
+console.log("1"+2);//string contatenation it take 2 as a string
+console.log("1"+2+2);//everything behind the string will be treated as string
+console.log(1+"2");
+console.log(1+1+"2");//before the string there is no string contatenation
+
+//NOT to be preffered
+console.log(true); //true
+console.log(+true); //converted to Number
+console.log(+"");//converted to Number
+console.log(+"a"); //converted to Number gives//NaN
+
+let gameCounter = 100
+gameCounter++ //postfix (first the value is stored then increamented)
+++gameCounter //prefix (first the value is incremented then stored)
+console.log(gameCounter);
+
+
+
+
+
+
 
 
