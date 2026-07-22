@@ -154,3 +154,85 @@ myCoding.forEach( (item) => {
     console.log(item.languageName);
     console.log(item.languageFileName);
 })
+
+const coding = ["Javascript", "Java", "Python", "TypeScript", "React"]
+
+const values =coding.forEach((item) =>{
+    console.log(item);
+    // return item; foreach doesnt return values
+})
+console.log(values);
+
+//filters
+console.log();
+
+const myNums = [1,2,3,4,5,6,7,8,9,10]
+const newNums = myNums.filter( (num) => {
+    return num>4
+})
+console.log(newNums);
+
+const myNumbers = [1,2,3,4,5,6,7,8,9,10]
+
+//map automatically return values no need for the return statement 
+// but when we open the scope for num+10 then we have to return the values orelse we will be getting undefined
+
+const addednums = myNumbers.map((num) => num+10)
+console.log(addednums);
+
+
+
+//Chaining
+console.log();
+console.log("CHAINING");
+
+const newnums = myNumbers
+                .map((num)=> num*10)
+                .map((num)=> num+1)
+                .filter((num)=> num>=40)
+
+console.log(newnums);
+
+
+//REDUCE 
+const array1 = [1,2,3]
+
+const mytotal = array1.reduce(function (accumulator, currentvalue) {
+    console.log(`accumulator ${accumulator} and current values: ${currentvalue}`);
+     
+    return accumulator + currentvalue
+},0)//value of accumulator initial value
+
+console.log(mytotal);
+
+
+//reduce in arrow function
+const myTotal = array1.reduce( (acc, curr)=> acc+curr, 0)
+
+console.log(myTotal);
+
+
+
+//in objects reducer
+const myCourses = [
+    {
+        courseName: "Java",
+        price: 999
+    },
+    {
+        courseName: "Javascript",
+        price: 1999
+    },
+    {
+        courseName: "Python",
+        price: 9990
+    },
+    {
+        courseName: "Ruby",
+        price: 909
+    }
+]
+
+const priceToPay = myCourses.reduce( (acc,item) => acc+item.price, 0)
+console.log(priceToPay)
+
