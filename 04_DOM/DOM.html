@@ -1,0 +1,53 @@
+//DOM -> Document Object Model
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning Kovid <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+//document.getElementById('title') //gives the values for the selescted id
+//document.getElementById('title').id //title
+//document.getElementByClass('title')//undefined
+//document.getElementByClassName('title') //'heading'
+//document.getElementById('title').getAttribute('id') //'title'
+//document.getElementById('title').setAttribute('class', 'test') //undefiend but always overwrites
+
+//.textContent - we get the actuall text 
+//.innerText - we get the text with may be something hidden
+//.innerHTML - gives the HTML values also the HTML key value pairs
+
+//Query Selectors
+//document.querySelector('h1') ///this will give the h1 tag with its value
+//document.querySelector('.heading') ///this gives the class
+//document.querySelector('input') ///this gives the input element
+//document.querySelector('input[type="password"]') ///give the input field with password
+
+//document.querySelectorAll('li') //give all values of list in the form of Nodelist
+
+ 
