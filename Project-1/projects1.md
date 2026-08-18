@@ -32,7 +32,7 @@ buttons.forEach(function(button){
 ``` 
 
 # Project 2 Solution
-```
+```javascript
 const form = document.querySelector('form')
 
 form.addEventListener('submit', function(e){
@@ -67,7 +67,7 @@ form.addEventListener('submit', function(e){
 
 ```
 # Project 3 Solution
-```
+```javascript
 const clock = document.getElementById('clock')
 // const clock = document.querySelector('#clock')
 
@@ -81,7 +81,7 @@ setInterval(function(){
 
 # Project 4 Solution
 
-```
+```javascript
 const randomNumber = parseInt(Math.random()*10+1);
 
 const submit = document.querySelector('#subt')

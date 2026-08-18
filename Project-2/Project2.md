@@ -1,5 +1,5 @@
 # Project 5 Solution
-```
+```javascript
 console.log('Project 5');
 
 const insert = document.getElementById('insert')
@@ -26,7 +26,7 @@ window.addEventListener('keydown', (e) => {
 
 
 # Project 6 Solution
-```
+```javascript
 const randomColor = function(){
   let hex='01234567ABCDEF'
   let color='#'
